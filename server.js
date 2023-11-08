@@ -9,6 +9,8 @@ const port = process.env.PORT || 3000;
 
 const pictureRouter = require('./routes/pictureRoute');
 
+app.use(express.static(path.join(__dirname, "uploads")))
+
 // Configure o CORS no nível do aplicativo
 app.use(cors());
 
