@@ -1,9 +1,9 @@
-const Picture = require("../models/picture"); // Importação do módulo
+const Picture = require("../models/picture");
 const fs = require("fs");
 
 exports.create = async (req, res) => {
   try {
-    const { name, ano } = req.body; // Adicione "ano" ao objeto desestruturado
+    const { name, ano } = req.body; 
 
     const file = req.file;
 
